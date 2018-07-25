@@ -1,0 +1,44 @@
+page-home {
+ h1{
+  text-align: center;
+  color:#FFF;
+  font-family: 'Fugaz One', cursive;
+  font-size: 90px;
+ }
+ h5{
+  margin: 0px;
+  color: #FFF;
+  font-weight: normal;
+ }
+ h5 span{
+   color:orangered;
+ }
+ .item.item-input {
+  background-color: transparent;
+  border:none;
+}
+.item-block{
+  border:none !important;
+
+}
+.item-inner{
+  border: 1px solid #FFF !important;
+  border-radius: 10px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  color:#FFF;
+  font-size: 14px;
+}
+.text-input::-moz-placeholder {
+  color: white;
+}
+
+.text-input:-ms-input-placeholder {
+  color: white;
+}
+
+.text-input::-webkit-input-placeholder {
+  text-indent: 0;
+  color: white;
+}
+}
