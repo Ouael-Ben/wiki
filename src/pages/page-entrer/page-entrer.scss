@@ -8,4 +8,25 @@ page-page-entrer {
         color: #FFF;
         padding-left: 5px;
     }
+    .swiper-container-horizontal > .swiper-pagination-bullets{
+        top:0px !important;
+        bottom: 0px;
+    }
+    .swiper-pagination-bullets .swiper-pagination-bullet{
+        box-shadow: 1px 2px #ccc !important;
+        margin: 0px 23px !important;
+    }
+    .class-active{
+        color:#FFF !important;
+    }
+    ion-slides {
+        height: auto;
+      }
+    ion-slide.swiper-slide {
+        align-items: flex-start;
+    }
+    img ~ span {
+        font-size: 10px;
+        display: block;
+        }
 }

@@ -8,21 +8,21 @@
 
   <ion-navbar hideBackButton="true" color="mainapplication">
     <ion-title>Wiki</ion-title>
-    <ion-grid>
+    <ion-grid style="margin-bottom: -16px;">
       <ion-row align-items-center justify-content-center>
         <ion-col justify-content-center>
           <div class="classes">
-            <p style="text-align:center">Categories</p>
+            <p style="text-align:center;color:#ccc" [ngClass]="{'class-active':currentIndex===0}">Categories</p>
           </div>
         </ion-col>
         <ion-col justify-content-center>
           <div class="classes">
-            <p style="text-align:center">Contacts</p>
+            <p style="text-align:center;color:#ccc" [ngClass]="{'class-active':currentIndex===1}">Contacts</p>
           </div>
         </ion-col>
         <ion-col justify-content-center>
           <div class="classes">
-            <p style="text-align:center">Notifications</p>
+            <p style="text-align:center;color:#ccc" [ngClass]="{'class-active':currentIndex===2||currentIndex===3}">Notifications</p>
           </div>
         </ion-col>
       </ion-row>
@@ -32,6 +32,92 @@
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content padding >
+  <ion-slides pager (ionSlideDidChange)="slideChanged()">
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p>What're you looking for ?</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4>
+            <div>
+              <img src="assets/imgs/sleeping-bed.png" alt="" style="width:50px;height:50px">
+              <span >Accomodation</span>
+            </div>
+          </ion-col>
+          <ion-col col-4>
+            <div>
+                <img src="assets/imgs/car-compact.png" alt="" style="width:50px;height:50px">
+                <span>Transport</span>
+            </div>
+          </ion-col>
+          <ion-col col-4>
+              <div>
+                  <img src="assets/imgs/hand.png" alt="" style="width:50px;height:50px">
+                  <span>Money</span>
+              </div>
+          </ion-col>
+              <ion-col col-4>
+                  <div>
+                      <img src="assets/imgs/store.png" alt="" style="width:50px;height:50px">
+                      <span>Store</span>
+                  </div>
+              </ion-col>
+              <ion-col col-4>
+                  <div>
+                      <img src="assets/imgs/shirt.png" alt="" style="width:50px;height:50px">
+                      <span>Clothing</span>
+                  </div>
+              </ion-col>
+              <ion-col col-4>
+                  <div>
+                      <img src="assets/imgs/makeup.png" alt="" style="width:50px;height:50px">
+                      <span>Beauty</span>
+                  </div>
+              </ion-col>
+                <ion-col col-4>
+                    <div>
+                        <img src="assets/imgs/fitness.png" alt="" style="width:50px;height:50px">
+                        <span>Fitness</span>
+                    </div>
+                </ion-col>
+                <ion-col col-4>
+                    <div>
+                        <img src="assets/imgs/food.png" alt="" style="width:50px;height:50px">
+                        <span>Fitness</span>
+                    </div>
+                </ion-col>
+                <ion-col col-4>
+                    <div>
+                        <img src="assets/imgs/orange-juice.png" alt="" style="width:50px;height:50px">
+                        <span>Going out</span>
+                    </div>
+                </ion-col>
+                <ion-col col-4>
+                   
+                    <div>
+                      <img src="assets/imgs/bank-building.png" alt="" style="width:50px;height:50px">
+                        <span>Public Service</span>
+                    </div>
+                </ion-col>
+                <ion-col col-4>
+                    <div>
+                        <img src="assets/imgs/health.png" alt="" style="width:50px;height:50px">
+                          <span>Health</span>
+                      </div>
+                </ion-col>
+         
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
